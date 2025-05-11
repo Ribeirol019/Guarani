@@ -2,112 +2,116 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cultura Guarani</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Guarani Futebol Clube</title>
 </head>
 
 <body>
-  <header class="container text-center py-4">
-    <img src="img/guarani-avatar.png" alt="Cultura Guarani" class="rounded-circle" width="150" height="150" />
-    <h1 class="mt-3">Cultura do Povo Guarani</h1>
-    <p class="lead">Conheça a sabedoria ancestral e as tradições do povo Guarani, um dos povos indígenas mais antigos da América do Sul.</p>
-    <div>
-      <span class="badge bg-success">Tradição</span>
-      <span class="badge bg-success">Sabedoria Ancestral</span>
-      <span class="badge bg-success">Língua Guarani</span>
-      <span class="badge bg-success">Espiritualidade</span>
+    <header class="container text-center">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Guarani_FC_logo.svg/1024px-Guarani_FC_logo.svg.png" alt="Escudo do Guarani Futebol Clube" class="rounded-circle" width="150" height="150">
+        <p class="lead">Bem-vindo ao mundo do Guarani Futebol Clube!</p>
+        <h1>Orgulho de Campinas: Guarani FC</h1>
+        <p>O Guarani Futebol Clube é um time de tradição no futebol brasileiro. Aqui, você encontrará tudo sobre o nosso Bugre, a história, a torcida e muito mais!</p>
+        <p>Alguns dos nossos maiores feitos:</p>
+        <div>
+            <p class="badge bg-secondary">Campeão Brasileiro (1978)</p>
+            <p class="badge bg-secondary">Campeão Paulista (1976)</p>
+            <p class="badge bg-secondary">Maior time de Campinas</p>
+        </div>
+    </header>
+
+    <main class="container mt-5">
+        <h2>História do Guarani FC</h2>
+        <p>Fundado em 1911, o Guarani Futebol Clube é uma das maiores equipes do futebol paulista, com uma rica história e uma torcida apaixonada. Acompanhe os principais momentos da nossa trajetória.</p>
+        <div class="row">
+            <!-- História 1 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2b/Guarani_FC_titulos_1978.jpg/800px-Guarani_FC_titulos_1978.jpg" class="card-img-top" alt="Imagem de título de 1978">
+                    <div class="card-body">
+                        <h5 class="card-title">Campeonato Brasileiro de 1978</h5>
+                        <p class="card-text">O Guarani FC conquistou seu primeiro e único Campeonato Brasileiro, derrotando o Palmeiras na final. Uma vitória histórica para a cidade de Campinas!</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Leia mais sobre a conquista</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- História 2 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Est%C3%A1dio_Brinco_de_Ouro.jpg/800px-Est%C3%A1dio_Brinco_de_Ouro.jpg" class="card-img-top" alt="Imagem do Estádio Brinco de Ouro">
+                    <div class="card-body">
+                        <h5 class="card-title">O Estádio Brinco de Ouro</h5>
+                        <p class="card-text">O Estádio Brinco de Ouro é o templo sagrado do Bugre, e a casa da torcida apaixonada do Guarani. Confira sua história e os jogos mais emocionantes.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Veja mais sobre o estádio</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- História 3 -->
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Torcida_guarani_futebol_clube.jpg/800px-Torcida_guarani_futebol_clube.jpg" class="card-img-top" alt="Imagem da torcida do Guarani">
+                    <div class="card-body">
+                        <h5 class="card-title">A Torcida do Guarani</h5>
+                        <p class="card-text">A Torcida Guarani é uma das mais apaixonadas e fiéis do Brasil. Com muita energia, o Bugre se fortalece a cada partida com o apoio incondicional dos seus torcedores.</p>
+                        <button type="button" class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Conheça a história da torcida</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Modal 1 -->
+    <div class="modal" id="modal1" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Campeonato Brasileiro de 1978</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Nesta edição histórica do Campeonato Brasileiro, o Guarani se consagrou campeão nacional ao vencer o Palmeiras na final, marcando um dos maiores momentos da história do clube.</p>
+                </div>
+            </div>
+        </div>
     </div>
-  </header>
 
-  <main class="container mt-5">
-    <h2 class="mb-4">Tópicos em Destaque</h2>
-    <div class="row">
-      <!-- Card 1 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/guarani-tradicao.jpg" class="card-img-top" alt="Tradições Guarani" />
-          <div class="card-body">
-            <h5 class="card-title">Tradições e Rituais</h5>
-            <p class="card-text">Os Guarani realizam rituais sagrados que fortalecem a conexão com a natureza e os espíritos.</p>
-            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal1">Saiba mais</button>
-          </div>
+    <!-- Modal 2 -->
+    <div class="modal" id="modal2" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">O Estádio Brinco de Ouro</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>O Estádio Brinco de Ouro foi inaugurado em 1958 e desde então tem sido a casa do Guarani Futebol Clube. O estádio passou por várias reformas, mas sempre manteve sua importância histórica para o clube e para a cidade de Campinas.</p>
+                </div>
+            </div>
         </div>
-      </div>
-
-      <!-- Card 2 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/guarani-lingua.jpg" class="card-img-top" alt="Língua Guarani" />
-          <div class="card-body">
-            <h5 class="card-title">Língua e Educação</h5>
-            <p class="card-text">O Guarani é uma língua viva falada por milhares. Descubra como ela é passada entre gerações.</p>
-            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal2">Saiba mais</button>
-          </div>
-        </div>
-      </div>
-
-      <!-- Card 3 -->
-      <div class="col-md-4">
-        <div class="card">
-          <img src="img/guarani-natureza.jpg" class="card-img-top" alt="Guarani e natureza" />
-          <div class="card-body">
-            <h5 class="card-title">Conexão com a Natureza</h5>
-            <p class="card-text">Para os Guarani, a Terra é sagrada. Eles vivem em harmonia com florestas, rios e animais.</p>
-            <button class="btn btn-link" data-bs-toggle="modal" data-bs-target="#modal3">Saiba mais</button>
-          </div>
-        </div>
-      </div>
     </div>
-  </main>
 
-  <!-- Modais -->
-  <div class="modal fade" id="modal1" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Tradições e Rituais Guarani</h5>
-          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+    <!-- Modal 3 -->
+    <div class="modal" id="modal3" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">A Torcida do Guarani</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>A torcida do Guarani é famosa por sua lealdade e paixão. Conheça as principais características dessa torcida que, em momentos de vitória e derrota, sempre apoia o time.</p>
+                </div>
+            </div>
         </div>
-        <div class="modal-body">
-          <p>Os rituais Guarani incluem cânticos, danças e cerimônias em homenagem aos deuses da natureza. A Casa de Reza (Opy) é o centro espiritual da aldeia.</p>
-        </div>
-      </div>
     </div>
-  </div>
 
-  <div class="modal fade" id="modal2" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">A Língua Guarani</h5>
-          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <p>O Guarani é uma das línguas indígenas oficiais do Brasil. Ela é ensinada nas comunidades e também reconhecida em escolas bilíngues.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="modal fade" id="modal3" tabindex="-1">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title">Guarani e a Natureza</h5>
-          <button class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-        </div>
-        <div class="modal-body">
-          <p>O povo Guarani acredita que a Terra é um presente divino. Eles praticam agricultura sustentável e respeitam o equilíbrio natural.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
